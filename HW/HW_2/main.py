@@ -187,7 +187,7 @@ def chat():
             break
 
         else:
-            print(Fore.RED + "TravelBot: Sorry, I didn't understand.")
+            print(Fore.RED + "TravelBot: Sorry, I didn't understand.Can you repeat that again?")
             show_help()
 
 # RUN PROGRAM
