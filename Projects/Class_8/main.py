@@ -43,6 +43,14 @@ cv2.arrowedLine(image_rgb, arrow_end, arrow_start, (255, 255, 0), 3, tipLength=0
 height_label_position = (arrow_start[0] - 150, (arrow_start[1] + arrow_end[1]) // 2)
 cv2.putText(image_rgb, f'Height: {height}px', height_label_position, font, 0.8, (255, 255, 0), 2, cv2.LINE_AA)
 
+
+cv2.circle(image_rgb, (width // 2, height // 2), 250, (0, 250, 0), -1)
+cv2.circle(image_rgb, (width // 2, height // 2), 100, (100, 100, 0, 0.5), -1)
+
+
+
+
+
 plt.figure(figsize=(12, 8))
 plt.imshow(image_rgb)
 plt.title("Annotated Image with Regions, Centers, and Bi-Directional Height Arrows")
