@@ -1,13 +1,12 @@
 import requests
-number = 2
 
-url = f"http://numbersapi.com/{number}/math"
+url = "https://baconipsum.com/api/?type=meat-and-filler&paras=1&format=json"
 
 def get_random_technology_fact():
     response = requests.get(url)
     if response.status_code == 200:
         fact_data = response.json()
-        print(f"Did you know? {fact_data['text']}")
+        print(f"Here your random text: \n {fact_data[0]}")
     else:
         print("Failed to retrieve fact.")
 
@@ -16,4 +15,3 @@ while True:
     if user_input.lower() == 'q':
         break
     get_random_technology_fact()
-    
