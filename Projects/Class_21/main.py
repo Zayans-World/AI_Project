@@ -1,6 +1,6 @@
 import requests
 #from config import HF_API_KEY
-HF_API_KEY = API_URL
+HF_API_KEY = ""
 
 MODEL_ID = "facebook/bart-large-mnli"
 API_URL = f"https://router.huggingface.co/hf-interference/models/{MODEL_ID}"
