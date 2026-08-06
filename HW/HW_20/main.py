@@ -15,3 +15,5 @@ while True:
     if user_input.lower() == 'q':
         break
     get_random_technology_fact()
+
+    
